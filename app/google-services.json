@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "488869166191",
+    "project_id": "plant-bot-c153b",
+    "storage_bucket": "plant-bot-c153b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488869166191:android:1fd878fd6876eae9c5e19a",
+        "android_client_info": {
+          "package_name": "com.example.plantbot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "488869166191-o40d63g6gm3rakp63qh76mcme5v3mdcl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANmMtopu_XKScZ8aQDtqA0ZkqSdies3ns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "488869166191-o40d63g6gm3rakp63qh76mcme5v3mdcl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
