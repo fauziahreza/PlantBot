@@ -1,15 +1,17 @@
 package com.example.plantbot;
 
-import androidx.fragment.app.FragmentActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import com.example.plantbot.adapter.LoginAdapter;
 import com.google.android.material.tabs.TabLayout;
 
-public class LoginActivity extends FragmentActivity {
+public class LoginActivity extends AppCompatActivity {
 
+    Context context;
     TabLayout tabLayout;
     ViewPager viewPager;
     float v=0;
@@ -19,6 +21,7 @@ public class LoginActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        context = this;
         tabLayout = findViewById(R.id.tab_layout);
         viewPager = findViewById(R.id.view_pager);
 
