@@ -25,7 +25,6 @@ public class SignUpTabFragment extends Fragment {
     EditText password;
     EditText namaLengkap;
     EditText email;
-    Context context;
     Button signUp;
     FirebaseAuth fAuth;
     float v=0;
@@ -34,7 +33,6 @@ public class SignUpTabFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_sign_up_tab, container, false);
 
-        context = this;
         username = view.findViewById(R.id.username);
         password = view.findViewById(R.id.password);
         namaLengkap = view.findViewById(R.id.nama_lengkap);
@@ -69,11 +67,11 @@ public class SignUpTabFragment extends Fragment {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
-                            Toast.makeText(signUp.this, "User Terdaftar.", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext));
+                            Toast.makeText(SignUpTabFragment.this, "Akun Terdaftar", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent());
                         }
                     }
-                })
+                });
 
             }
         });
